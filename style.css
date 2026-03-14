@@ -641,6 +641,13 @@ strong {
     padding-top: 1rem;
 }
 
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
 /* TIMELINE (Experience) */
 .timeline {
     position: relative;
