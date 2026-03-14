@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayan Sinha | Aspiring Cloud & Software Developer</title>
+    <meta name="description" content="Portfolio of Nayan Sinha, a Computer Science student passionate about cloud computing, backend systems, and building scalable software applications.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Background Containers -->
+    <div id="canvas-container-dark"></div>
+    <div id="canvas-container-light"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">NS<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-image-container gs_reveal gs_reveal_fromTop">
+                    <img src="assets/images/profile.jpg" alt="Nayan Sinha Profile Picture" class="hero-profile-img">
+                </div>
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="name">Nayan Sinha<span class="dot">.</span></h1>
+                <h2 class="role">Aspiring Cloud & Software Developer</h2>
+                <p class="intro">
+                    Computer Science student passionate about cloud computing, backend systems, and building scalable software applications.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://drive.google.com/file/d/1CxGdItahnvpZB_J2Uwh5yCUebKXtadtN/view?usp=sharing" target="_blank" class="btn btn-outline"><i class="fas fa-file-pdf"></i> Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nayan-sinha-0b4397284/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Nayansinha2021" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:nayansinha2021@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am pursuing a <strong>B.Tech in Computer Science and Engineering</strong> at <strong>Lovely Professional University</strong>.</p>
+                        <p>I have a strong interest in <strong>cloud computing, backend development, scalable systems, and full-stack web development</strong>. I enjoy learning modern technologies and building real-world software projects that solve practical problems.</p>
+                        <p>My goal is to work with product-based technology companies where I can contribute to building impactful products, collaborate with talented engineers, and continuously grow as a software developer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    
+                    <!-- Languages -->
+                    <div class="skill-category gs_reveal">
+                        <h3 class="category-title"><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-card"><i class="devicon fa-brands fa-cuttlefish"></i><span>C</span></div>
+                            <div class="skill-card"><i class="devicon fa-brands fa-cuttlefish"></i><span>C++</span></div>
+                            <div class="skill-card"><i class="devicon fa-brands fa-java"></i><span>Java</span></div>
+                            <div class="skill-card"><i class="devicon fa-brands fa-python"></i><span>Python</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-category gs_reveal">
+                        <h3 class="category-title"><i class="fas fa-layer-group"></i> Frameworks & Technologies</h3>
+                        <div class="skill-items">
+                            <div class="skill-card"><i class="devicon fa-brands fa-html5"></i><span>HTML</span></div>
+                            <div class="skill-card"><i class="devicon fa-brands fa-css3-alt"></i><span>CSS</span></div>
+                            <div class="skill-card"><i class="devicon fas fa-wind"></i><span>Tailwind CSS</span></div>
+                            <div class="skill-card"><i class="devicon fa-brands fa-node-js"></i><span>NodeJS</span></div>
+                            <div class="skill-card"><i class="devicon fa-brands fa-react"></i><span>React</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category gs_reveal">
+                        <h3 class="category-title"><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                        <div class="skill-items">
+                            <div class="skill-card"><i class="devicon fas fa-database"></i><span>MySQL</span></div>
+                            <div class="skill-card"><i class="devicon fas fa-leaf"></i><span>MongoDB</span></div>
+                            <div class="skill-card"><i class="devicon fa-brands fa-aws"></i><span>AWS</span></div>
+                            <div class="skill-card"><i class="devicon fas fa-server"></i><span>Oracle Cloud</span></div>
+                            <div class="skill-card"><i class="devicon fa-brands fa-docker"></i><span>Docker</span></div>
+                            <div class="skill-card"><i class="devicon fas fa-robot"></i><span>Roboflow</span></div>
+                            <div class="skill-card"><i class="devicon fas fa-tags"></i><span>Labelbox</span></div>
+                            <div class="skill-card"><i class="devicon fas fa-tasks"></i><span>Appen</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-category gs_reveal">
+                        <h3 class="category-title"><i class="fas fa-users"></i> Soft Skills</h3>
+                        <div class="skill-items">
+                            <div class="skill-card"><span>Problem Solving</span></div>
+                            <div class="skill-card"><span>Teamwork</span></div>
+                            <div class="skill-card"><span>Adaptability</span></div>
+                            <div class="skill-card"><span>Time Management</span></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card gs_reveal gs_reveal_fromLeft">
+                        <div class="project-image">
+                            <img src="assets/images/projects/csm.png" alt="Community Safety Monitor Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Community Safety Monitor</h3>
+                            <p class="project-desc">A web platform designed to monitor and visualize community safety data through interactive charts and real-time visualization.</p>
+                            
+                            <div class="project-features">
+                                <ul>
+                                    <li>Interactive charts and dashboards</li>
+                                    <li>Real-time visualization of incidents and trends</li>
+                                    <li>Admin and user dashboards</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Chart.js</span><span>PHP</span><span>MySQL</span><span>AWS EC2/S3</span>
+                            </div>
+                            
+                            <div class="project-impact">
+                                <p><strong>Impact:</strong> Improved visibility of safety data. Deployed on AWS with high uptime and scalable performance.</p>
+                            </div>
+                            
+                            <div class="project-links" style="margin-top: 1.5rem;">
+                                <a href="https://github.com/Nayansinha2021/Community-Safety-Moniter" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card gs_reveal gs_reveal_fromRight">
+                        <div class="project-image">
+                            <img src="assets/images/projects/event-reminder.png" alt="Event Reminder System Platform">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Event Reminder System</h3>
+                            <p class="project-desc">A web-based system that helps users schedule events and receive real-time notifications and reminders.</p>
+                            
+                            <div class="project-features">
+                                <ul>
+                                    <li>Event scheduling</li>
+                                    <li>Notification reminders</li>
+                                    <li>Secure event storage</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Docker</span><span>Microservices</span><span>MySQL</span><span>AWS EC2/S3</span>
+                            </div>
+                            
+                            <div class="project-impact">
+                                <p><strong>Impact:</strong> Improved personal and organizational time management by 78% via scalable AWS deployment.</p>
+                            </div>
+                            
+                            <div class="project-links" style="margin-top: 1.5rem;">
+                                <a href="https://eventreminder.duckdns.org/login" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience & Training Section -->
+        <section id="experience" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                
+                <div class="timeline">
+                    <!-- Experience -->
+                    <div class="timeline-item gs_reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">October 2025</span>
+                            <h3>Freelance Agentic AI Developer & AI Data Annotator</h3>
+                            <p class="timeline-subtitle">Independent Contract</p>
+                            <ul>
+                                <li>Performed high-volume data labeling and annotation for machine learning model training.</li>
+                                <li>Annotated text, image, and structured datasets.</li>
+                                <li>Conducted dataset quality validation to improve training data reliability.</li>
+                                <li><strong>Tools:</strong> Roboflow, Labelbox, Appen</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Achievement -->
+                    <div class="timeline-item gs_reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2025</span>
+                            <h3>Crowdsourcing Internship</h3>
+                            <p class="timeline-subtitle">Muskurahat Foundation</p>
+                            <p>Selected for a crowdsourcing internship after a competitive screening process.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title mt-5">Training</h2>
+
+                <div class="timeline">
+                    <!-- Training -->
+                    <div class="timeline-item gs_reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2025</span>
+                            <h3>Data Structures and Algorithms Training</h3>
+                            <p class="timeline-subtitle">Comprehensive DSA Program</p>
+                            <p>Covered: Arrays, Linked Lists, Stacks, Queues, Trees, Heaps, Graphs, Recursion, Backtracking, Greedy algorithms, Dynamic Programming.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <h2 class="section-title mt-5">Certifications</h2>
+                <div class="certifications-grid gs_reveal">
+                    <a href="https://drive.google.com/file/d/1fWMDyAfaUvGqx57xt2DZkaf2JVSrf9OW/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        <div class="cert-card has-image">
+                            <div class="cert-image-wrapper">
+                                <img src="assets/images/certificates/oracle-developer.jpg" alt="Oracle Developer Professional" class="cert-img">
+                            </div>
+                            <div class="cert-info">
+                                <h4>Oracle Cloud Infrastructure 2025 Developer Professional</h4>
+                                <span>Oracle • Sep 2025</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1CMknEjWt9Qyu36q3-7j9OXMl8Hcvg4xJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        <div class="cert-card has-image">
+                            <div class="cert-image-wrapper">
+                                <img src="assets/images/certificates/oracle-devops.jpg" alt="Oracle DevOps Professional" class="cert-img">
+                            </div>
+                            <div class="cert-info">
+                                <h4>Oracle Cloud Infrastructure 2025 DevOps Professional</h4>
+                                <span>Oracle • Sep 2025</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1jdnaaRpixmTgIq7gtq5LUgrwszX1GJya/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        <div class="cert-card has-image">
+                            <div class="cert-image-wrapper">
+                                <img src="assets/images/certificates/oracle-ai.jpg" alt="Oracle AI Foundations Associate" class="cert-img">
+                            </div>
+                            <div class="cert-info">
+                                <h4>Oracle Cloud Infrastructure AI Foundations Associate</h4>
+                                <span>Oracle • Aug 2025</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/19i5A6MyxLdUyYS6YK5RAU1_p5SjQMVEH/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        <div class="cert-card has-image">
+                            <div class="cert-image-wrapper">
+                                <img src="assets/images/certificates/dsa-cipher.jpg" alt="Problem Solving with Data Structures & Algorithms" class="cert-img">
+                            </div>
+                            <div class="cert-info">
+                                <h4>Problem Solving with Data Structures & Algorithms</h4>
+                                <span>CipherSchool • Jul 2025</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1w-dlafVWeZhjbcKFKxvEp4ajEsh3j4dZ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        <div class="cert-card has-image">
+                            <div class="cert-image-wrapper">
+                                <img src="assets/images/certificates/advanced-networks.jpg" alt="Advanced Computer Networks" class="cert-img">
+                            </div>
+                            <div class="cert-info">
+                                <h4>Advanced Computer Networks</h4>
+                                <span>NPTEL</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    
+                    <div class="edu-card gs_reveal">
+                        <h3>B.Tech - Computer Science and Engineering</h3>
+                        <h4>Lovely Professional University, Punjab</h4>
+                        <p>CGPA: <strong>7.39</strong></p>
+                        <div class="edu-year" style="margin-top: 1rem;">Aug 2023 - Present</div>
+                    </div>
+
+                    <div class="edu-card gs_reveal">
+                        <h3>Intermediate (12th)</h3>
+                        <h4>Vivekananda Central School, Hazaribag</h4>
+                        <div class="edu-year" style="margin-top: 1rem;">Apr 2020 - Mar 2022</div>
+                    </div>
+
+                    <div class="edu-card gs_reveal">
+                        <h3>Matriculation (10th)</h3>
+                        <h4>St. Stephen's School, Hazaribag</h4>
+                        <div class="edu-year" style="margin-top: 1rem;">Apr 2018 - Mar 2020</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container gs_reveal">
+                    
+                    <div class="contact-info">
+                        <h3>Let's talk about everything!</h3>
+                        <p>Don't like forms? Send me an email. 👋</p>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:nayansinha2021@gmail.com">nayansinha2021@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+917903063561">+91-7903063561</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/nayan-sinha-0b4397284/" target="_blank">linkedin.com/in/nayan-sinha-0b4397284</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Nayansinha2021" target="_blank">github.com/Nayansinha2021</a>
+                        </div>
+                        
+                        <div class="contact-socials">
+                            <a href="https://www.linkedin.com/in/nayan-sinha-0b4397284/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Nayansinha2021" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:nayansinha2021@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Nayan Sinha. All rights reserved.</p>
+            <p class="footer-note">Designed and Built by Nayan Sinha</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Three.js for Dark Mode Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
