@@ -742,7 +742,22 @@ strong {
 .certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
+    padding: 0 8%; /* Increased side margins significantly for a centered look */
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+@media (max-width: 992px) {
+    .certifications-grid {
+        padding: 0 4%; /* Slightly less on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications-grid {
+        padding: 0 2rem; /* Standard padding on mobile */
+    }
 }
 
 .cert-link {
@@ -796,6 +811,125 @@ strong {
 
 .cert-card:hover .cert-img {
     transform: scale(1.05);
+}
+
+/* REFINED: Highlights Badges (About Section) */
+.about-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.highlights-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.highlight-badge {
+    background-color: var(--card-bg);
+    border: var(--glass-border);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(8px);
+    transition: var(--transition);
+    border-left: 3px solid var(--accent);
+}
+
+.highlight-badge:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent);
+}
+
+/* REFINED: Timeline with Images In Empty Space */
+.timeline-image.opposite {
+    position: absolute;
+    width: 400px;
+    height: 225px;
+    top: 0;
+    z-index: 10;
+    border-radius: 12px;
+    overflow: hidden;
+    border: var(--glass-border);
+    box-shadow: var(--shadow-lg);
+    background-color: #fff;
+    padding: 5px;
+    transition: var(--transition);
+}
+
+/* For odd items (text on left), image goes to right empty space */
+.timeline-item:nth-child(odd) .timeline-image.opposite {
+    left: calc(100% + 40px);
+}
+
+/* For even items (text on right), image goes to left empty space */
+.timeline-item:nth-child(even) .timeline-image.opposite {
+    right: calc(100% + 40px);
+}
+
+.timeline-image.opposite img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.timeline-image.opposite:hover {
+    transform: scale(1.05);
+    z-index: 20;
+}
+
+/* Mobile adjustments */
+@media (max-width: 1200px) {
+    /* Reduce image size for smaller viewports but still above mobile */
+    .timeline-image.opposite {
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    .about-right {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    .highlights-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    /* On medium screens, move images back inside or stack */
+    .timeline-image.opposite {
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        margin: 1.5rem auto 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    .timeline-dot {
+        left: 21px !important;
+    }
 }
 
 .cert-info {
